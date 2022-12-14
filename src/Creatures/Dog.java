@@ -6,7 +6,7 @@ import Utils.DogHaircut;
 import Utils.LookLike;
 import Utils.Lookable;
 
-public class Dog extends Creature implements Lookable{
+public class Dog extends Animal implements Lookable{
 
     private LookLike look = LookLike.OKAY;
     private DogHaircut haircut;

@@ -12,8 +12,34 @@ public abstract class Creature implements Locatable {
         setName(name);
         setAge(age);
     }
-    private String name;
+
+    public Creature(String name){
+        setName(name);
+    }
+
+    public Creature(){}
+
+    private String name = "No name";
     private int age;
+    private int hp = 100;
+
+    public final void damage(int damage){
+        this.hp -= damage;
+        System.out.println("That was really painful! Now " + this.name + " hp is " + this.hp);
+    }
+
+    public void heal(int heal){
+        this.hp = Math.min(100, this.hp + heal);
+        System.out.println("Sounds good! Now " + this.name + " hp is " + this.hp);
+    }
+
+    public boolean isAlive(){
+        return this.hp > 0;
+    }
+
+    public int getHP(){
+        return this.hp;
+    }
 
     public void setName(String name){
         this.name = name;
@@ -43,7 +69,7 @@ public abstract class Creature implements Locatable {
 
     @Override
     public String toString() {
-        return "name= " + this.name + ", age= " + this.age;
+        return "name=" + this.name + ", age=" + this.age;
     }
 
     @Override

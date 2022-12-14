@@ -2,7 +2,7 @@ package Creatures;
 
 import Utils.Lookable;
 
-public class Neznaika extends Human{
+public class Neznaika extends Human {
 
     public Neznaika(String name, int age){
         super(name, age);
@@ -12,5 +12,4 @@ public class Neznaika extends Human{
         entity.clean();
         System.out.println("Done!, There are clean now!");
     }
-
 }
