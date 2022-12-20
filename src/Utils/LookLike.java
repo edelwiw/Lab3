@@ -1,12 +1,15 @@
 package Utils;
 
+import Creatures.Animals.Dog;
+
 public enum LookLike {
     DIRTY("Грязный"),
-    BAD("asd"),
-    OKAY("ASd"),
-    FINE("SAD");
+    BAD("Плохо"),
+    OKAY("Хорошо"),
+    FINE("Отлично");
 
-    String text;
+    private String text;
+
     LookLike(String arg){
         this.text = arg;
     }

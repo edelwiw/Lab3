@@ -1,5 +1,5 @@
 package Utils;
 
-public interface canHeal {
+public interface HasHealingEffect {
     public int getHealingEffect();
 }

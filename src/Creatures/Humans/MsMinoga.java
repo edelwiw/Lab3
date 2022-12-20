@@ -1,6 +1,8 @@
-package Creatures;
+package Creatures.Humans;
 
-public class MsMinoga extends Human{
+import Creatures.Humans.Human;
+
+public class MsMinoga extends Human {
 
     private boolean sleep = true;
 

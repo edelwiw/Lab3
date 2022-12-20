@@ -1,4 +1,7 @@
-package Creatures;
+package Creatures.Animals;
+
+import Creatures.Animals.Animal;
+import Creatures.CanSeeDreems;
 
 public class Goat extends Animal implements CanSeeDreems {
 

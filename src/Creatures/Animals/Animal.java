@@ -1,6 +1,8 @@
-package Creatures;
+package Creatures.Animals;
 
-public class Animal extends Creature{
+import Creatures.Creature;
+
+public abstract class Animal extends Creature {
 
     public Animal(String name, int age){
         super(name, age);

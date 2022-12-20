@@ -1,7 +1,9 @@
 package Creatures;
 
+import Exceptions.Uncheckable.CannotHealDead;
 import Location.Locatable;
 import Location.Location;
+import Utils.HasHealingEffect;
 
 import java.util.Objects;
 
@@ -25,12 +27,15 @@ public abstract class Creature implements Locatable {
 
     public final void damage(int damage){
         this.hp -= damage;
-        System.out.println("That was really painful! Now " + this.name + " hp is " + this.hp);
+        if(this.hp > 0) System.out.println("That was really painful! Now " + this.name + " hp is " + this.hp);
+        else System.out.println("That was really painful! Now " + this.name + " is dead :(");
     }
 
-    public void heal(int heal){
-        this.hp = Math.min(100, this.hp + heal);
-        System.out.println("Sounds good! Now " + this.name + " hp is " + this.hp);
+    public void heal(HasHealingEffect heal){
+        if(!this.isAlive()) throw new CannotHealDead();
+        System.out.println("Eating " + heal.toString() +  " gives " + this.name + " " + heal.getHealingEffect() + " hp.");
+        this.hp = Math.min(100, this.hp + heal.getHealingEffect());
+        //System.out.println("Sounds good! Now " + this.name + " hp is " + this.hp);
     }
 
     public boolean isAlive(){

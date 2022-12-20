@@ -1,5 +1,6 @@
-package Creatures;
+package Creatures.Humans;
 
+import Creatures.Humans.Human;
 import Utils.Lookable;
 
 public class Neznaika extends Human {

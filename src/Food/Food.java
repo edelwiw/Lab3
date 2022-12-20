@@ -1,8 +1,8 @@
 package Food;
 
-import Utils.canHeal;
+import Utils.HasHealingEffect;
 
-public class Food implements canHeal {
+public class Food implements HasHealingEffect {
     private int callory;
     private final String name;
 
@@ -22,5 +22,10 @@ public class Food implements canHeal {
     @Override
     public int getHealingEffect() {
         return this.callory * 2;
+    }
+
+    @Override
+    public String toString(){
+        return this.name;
     }
 }
