@@ -1,3 +1,15 @@
+Wow! Money! Now balance is 40
+Zzz... Kozlik now dream about name=Bad rat, age=7
+Attack number 1 with damage 66
+That was really painful! Now Kozlik hp is 34
+Eating Baked potato gives Kozlik 12 hp.
+Eating Potato gives Kozlik 4 hp.
+Eating Cabbage gives Kozlik 8 hp.
+Eating Horseradish gives Kozlik 8 hp.
+You need yearn a bit more money. It will cost 98 coins
+Wow! Money! Now balance is 40
+You need yearn a bit more money. It will cost 98 coins
+3.0
 Bath Bath for Mimi now filled with water!
 It been used 45.20 liters of water
 Bath Bath for Roland now filled with water!
